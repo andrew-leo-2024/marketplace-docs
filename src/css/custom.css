@@ -1,0 +1,183 @@
+/* FrankMax Marketplace — Midnight Executive Theme */
+/* Navy #1E2761 | Ice Blue #CADCFC | Accent #7EC8E3 */
+
+:root {
+  --ifm-color-primary: #4A7FC1;
+  --ifm-color-primary-dark: #3A6DAE;
+  --ifm-color-primary-darker: #3264A3;
+  --ifm-color-primary-darkest: #295386;
+  --ifm-color-primary-light: #5C8FCA;
+  --ifm-color-primary-lighter: #6497CF;
+  --ifm-color-primary-lightest: #82ACD9;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #7EC8E3;
+  --ifm-color-primary-dark: #62BCD9;
+  --ifm-color-primary-darker: #54B6D5;
+  --ifm-color-primary-darkest: #2EA1C4;
+  --ifm-color-primary-light: #9AD4ED;
+  --ifm-color-primary-lighter: #A8DAF1;
+  --ifm-color-primary-lightest: #CAE9F7;
+  --ifm-background-color: #0D1321;
+  --ifm-background-surface-color: #1A1F36;
+  --ifm-navbar-background-color: #1E2761;
+  --ifm-footer-background-color: #0D1321;
+  --ifm-card-background-color: #1A1F36;
+  --ifm-color-emphasis-300: #CADCFC;
+  --ifm-font-color-base: #E2E8F0;
+  --docusaurus-highlighted-code-line-bg: rgba(126, 200, 227, 0.15);
+}
+
+/* Sidebar */
+[data-theme='dark'] .menu {
+  background-color: #141929;
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(126, 200, 227, 0.1);
+  border-left: 3px solid #7EC8E3;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #CADCFC;
+  font-weight: 700;
+}
+
+/* Table styling */
+[data-theme='dark'] table {
+  border-collapse: collapse;
+}
+
+[data-theme='dark'] th {
+  background-color: #1E2761;
+  color: #CADCFC;
+  border-bottom: 2px solid #7EC8E3;
+}
+
+[data-theme='dark'] td {
+  border-bottom: 1px solid #2A3055;
+}
+
+[data-theme='dark'] tr:nth-child(even) {
+  background-color: rgba(30, 39, 97, 0.2);
+}
+
+/* Badge components */
+.entity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.entity-badge--aineff { background-color: rgba(126, 200, 227, 0.2); color: #7EC8E3; }
+.entity-badge--ainef { background-color: rgba(255, 165, 0, 0.2); color: #FFA500; }
+.entity-badge--aineg { background-color: rgba(144, 238, 144, 0.2); color: #90EE90; }
+.entity-badge--aine { background-color: rgba(221, 160, 221, 0.2); color: #DDA0DD; }
+.entity-badge--wge { background-color: rgba(255, 215, 0, 0.2); color: #FFD700; }
+.entity-badge--frankmax { background-color: rgba(202, 220, 252, 0.2); color: #CADCFC; }
+.entity-badge--lpi { background-color: rgba(255, 99, 71, 0.2); color: #FF6347; }
+.entity-badge--univenture { background-color: rgba(0, 206, 209, 0.2); color: #00CED1; }
+
+.naics-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: rgba(202, 220, 252, 0.15);
+  color: #CADCFC;
+  margin-right: 3px;
+}
+
+/* Product cards */
+.product-card {
+  border: 1px solid #2A3055;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+[data-theme='dark'] .product-card {
+  background-color: #141929;
+}
+
+.product-card:hover {
+  border-color: #7EC8E3;
+}
+
+.product-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #CADCFC;
+  margin-bottom: 8px;
+}
+
+.product-card__category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #7EC8E3;
+  margin-bottom: 4px;
+}
+
+/* Pricing tier */
+.pricing-tier {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pricing-tier--starter { background-color: rgba(144, 238, 144, 0.15); color: #90EE90; }
+.pricing-tier--growth { background-color: rgba(126, 200, 227, 0.15); color: #7EC8E3; }
+.pricing-tier--enterprise { background-color: rgba(202, 220, 252, 0.15); color: #CADCFC; }
+.pricing-tier--sovereign { background-color: rgba(255, 215, 0, 0.15); color: #FFD700; }
+
+/* Mermaid overrides for dark theme */
+[data-theme='dark'] .mermaid {
+  background-color: transparent;
+}
+
+/* Recovery prompt special styling */
+.recovery-prompt {
+  border: 2px solid #7EC8E3;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 16px 0;
+}
+
+[data-theme='dark'] .recovery-prompt {
+  background-color: rgba(126, 200, 227, 0.05);
+}
+
+/* Audience header */
+.audience-header {
+  border-bottom: 2px solid #7EC8E3;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.audience-header__naics {
+  font-size: 0.85rem;
+  color: #7EC8E3;
+}
+
+.audience-header__decision-maker {
+  font-size: 0.85rem;
+  color: #CADCFC;
+  opacity: 0.8;
+}
