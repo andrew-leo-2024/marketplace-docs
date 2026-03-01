@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://marketplace.frankmax.io',
-  baseUrl: '/',
+  url: 'https://andrew-leo-2024.github.io',
+  baseUrl: '/marketplace-docs/',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -36,6 +36,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           showLastUpdateTime: false,
+          numberPrefixParser: false,
         },
         blog: false,
         theme: {
@@ -50,7 +51,7 @@ const config: Config = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        docsRouteBasePath: '/',
+        docsRouteBasePath: '/marketplace-docs/',
         indexBlog: false,
         highlightSearchTermsOnTargetPage: true,
       },
@@ -88,7 +89,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/_recovery',
+          to: '/recovery',
           label: 'Agent Recovery',
           position: 'right',
         },
@@ -100,7 +101,7 @@ const config: Config = {
         {
           title: 'Core',
           items: [
-            {label: 'Agent Recovery Prompt', to: '/_recovery'},
+            {label: 'Agent Recovery Prompt', to: '/recovery'},
             {label: 'Executive Overview', to: '/executive-overview'},
             {label: 'Economic Model', to: '/economic-model'},
           ],
