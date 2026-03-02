@@ -6,6 +6,88 @@ tags: [frankmax-service, operations]
 
 # Authority & Liability Mapping
 
-**Price**: $10,000-$50,000
+| Attribute | Detail |
+|---|---|
+| **Price** | $10,000 -- $50,000 per engagement |
+| **Duration** | 1--3 weeks |
+| **Delivery** | Structured assessment + mapping exercise |
+| **Deliverable** | Authority & Liability Map (visual + documented) |
+| **Buyer** | General Counsel, CROs, Board Risk Committees |
+| **Prerequisite** | Typically follows PIAR engagement |
 
-<!-- TODO: Fill from Gap 12 -->
+---
+
+## What It Does
+
+Authority & Liability Mapping traces every decision authority in the organization. It answers three questions for every decision that matters:
+
+1. **Who can authorize this?** -- Named individuals, roles, and conditions under which authority is granted.
+2. **Under what constraints?** -- Dollar thresholds, approval chains, escalation triggers, override conditions.
+3. **Who inherits the liability?** -- When the decision produces consequences, who is accountable -- legally, financially, and reputationally?
+
+Most organizations cannot answer these questions for their AI deployments. Authority is assumed, not documented. Liability is diffuse, not mapped. Constraints exist in policy documents that no one reads and no system enforces.
+
+This service produces a machine-readable, auditable map that connects every decision node to its authority source and liability destination.
+
+---
+
+## Why This Matters
+
+Regulators and courts do not ask "what is your AI governance policy?" They ask "who authorized this specific decision, under what authority, and who is liable for the outcome?" If the organization cannot produce a clear, documented answer in real-time, the question becomes evidence of negligence.
+
+Authority & Liability Mapping eliminates the gap between organizational structure and legal defensibility.
+
+---
+
+## Engagement Structure
+
+### Phase 1: Authority Discovery (3--5 days)
+- Interview decision-makers across business units, legal, risk, and IT
+- Map formal authority structures (board resolutions, delegation matrices, signing authorities)
+- Identify informal authority patterns (who actually decides, regardless of policy)
+
+### Phase 2: Liability Tracing (3--5 days)
+- For each authority node, trace the liability chain: who bears legal, financial, and regulatory consequences
+- Identify liability gaps (decisions where no one is clearly accountable)
+- Map liability inheritance patterns (when a decision-maker leaves, who inherits their exposure)
+
+### Phase 3: Constraint Mapping (3--5 days)
+- Document the conditions under which each authority can be exercised
+- Identify missing constraints (authorities without limits) and orphaned constraints (limits without enforcement)
+- Map escalation paths and override conditions
+
+### Phase 4: Deliverable Production (2--3 days)
+- Produce the Authority & Liability Map as a visual diagram with supporting documentation
+- Score each authority node on clarity (documented vs. assumed), enforceability (system-enforced vs. policy-only), and liability coverage (clear vs. diffuse)
+- Deliver prioritized recommendations for gap remediation
+
+---
+
+## Deliverable Structure
+
+| Component | Description |
+|---|---|
+| Authority Map (Visual) | Org-chart-style diagram showing every decision authority with named owners |
+| Liability Chain Matrix | Table mapping each authority to its liability destination(s) |
+| Constraint Registry | Documented conditions, thresholds, and escalation triggers for each authority |
+| Gap Analysis | Identified authorities without owners, liabilities without coverage, constraints without enforcement |
+| Remediation Priorities | Ranked list of fixes ordered by legal exposure severity |
+
+---
+
+## Pricing Logic
+
+| Scope | Price Range | Duration |
+|---|---|---|
+| Single business unit or product line | $10,000 -- $20,000 | 1--2 weeks |
+| Multi-unit, moderate complexity | $20,000 -- $35,000 | 2--3 weeks |
+| Enterprise-wide with cross-jurisdictional operations | $35,000 -- $50,000 | 3 weeks |
+
+---
+
+## Relationship to Other Frankmax Services
+
+- **PIAR** identifies the need; Authority & Liability Mapping delivers the structural answer
+- **Failure Propagation Analysis** uses the authority map to model cascading accountability failure
+- **Decision Defensibility Structuring** rebuilds the approval processes using the mapped authority chains
+- **Institutional Memory** preserves the authority map beyond leadership tenure changes

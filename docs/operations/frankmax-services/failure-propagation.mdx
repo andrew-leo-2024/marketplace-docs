@@ -6,6 +6,100 @@ tags: [frankmax-service, operations]
 
 # Failure Propagation & Blast-Radius Analysis
 
-**Price**: $20,000-$100,000
+| Attribute | Detail |
+|---|---|
+| **Price** | $20,000 -- $100,000 per engagement |
+| **Duration** | 2--4 weeks |
+| **Delivery** | Scenario modeling + blast-radius mapping |
+| **Deliverable** | Failure Propagation Report with cascading impact models |
+| **Buyer** | Board Risk Committees, CROs, COOs, General Counsel |
+| **Prerequisite** | Authority & Liability Map (recommended) |
 
-<!-- TODO: Fill from Gap 12 -->
+---
+
+## What It Does
+
+Failure Propagation & Blast-Radius Analysis models how a single failure cascades through the organization. It answers: when one system, process, or decision fails, what else breaks?
+
+Specifically, it maps:
+
+- **Which systems fail** -- downstream dependencies, data pipelines, automated workflows that consume the failed output
+- **Which contracts trigger** -- SLA penalties, indemnification clauses, insurance notification requirements, regulatory reporting obligations
+- **Which regulators activate** -- mandatory incident reporting thresholds, cross-jurisdictional notification requirements, enforcement escalation triggers
+- **Which stakeholders are exposed** -- customers affected, partners impacted, counterparties notified, media attention likelihood
+
+Most organizations think about failures in isolation. This service models them as propagation events with measurable blast radii.
+
+---
+
+## Why This Matters
+
+A single AI model failure does not produce a single consequence. It produces a cascade:
+
+1. The model produces an incorrect output.
+2. A downstream system consumes that output and makes a decision.
+3. That decision triggers a contract obligation.
+4. The obligation failure triggers a regulatory notification requirement.
+5. The regulatory notification triggers board-level disclosure.
+6. The disclosure triggers media attention.
+7. The media attention triggers customer attrition.
+
+Organizations that model only step 1 are surprised by steps 2--7. Failure Propagation models the entire chain before the failure occurs.
+
+---
+
+## Engagement Structure
+
+### Phase 1: Dependency Mapping (5--7 days)
+- Map system-to-system dependencies across the technology stack
+- Map process-to-process dependencies across business operations
+- Map decision-to-decision dependencies across authority chains
+- Identify single points of failure and concentration risks
+
+### Phase 2: Scenario Construction (3--5 days)
+- Construct 10--20 failure scenarios ranked by probability and severity
+- For each scenario, define the initial failure event and its immediate effects
+- Identify the propagation paths through mapped dependencies
+
+### Phase 3: Blast-Radius Modeling (5--7 days)
+- For each scenario, model the full cascade: systems, contracts, regulators, stakeholders
+- Quantify financial exposure at each propagation stage
+- Estimate time-to-detection and time-to-containment for each scenario
+- Identify containment boundaries (where propagation can be stopped)
+
+### Phase 4: Deliverable Production (3--5 days)
+- Produce the Failure Propagation Report with visual cascade models
+- Score each scenario on blast radius (narrow to enterprise-wide), financial exposure, and containment difficulty
+- Deliver containment architecture recommendations
+
+---
+
+## Deliverable Structure
+
+| Component | Description |
+|---|---|
+| Dependency Map | Visual map of system, process, and decision dependencies |
+| Scenario Library | 10--20 modeled failure scenarios with probability and severity scores |
+| Cascade Models | Step-by-step propagation paths for each scenario |
+| Blast-Radius Scores | Quantified impact at each propagation stage (financial, regulatory, reputational) |
+| Containment Architecture | Recommended circuit-breakers, kill-switches, and isolation boundaries |
+| Remediation Priorities | Ranked list of structural changes to reduce blast radii |
+
+---
+
+## Pricing Logic
+
+| Scope | Price Range | Duration |
+|---|---|---|
+| Single product / limited system footprint | $20,000 -- $40,000 | 2 weeks |
+| Multi-system, moderate complexity | $40,000 -- $70,000 | 3 weeks |
+| Enterprise-wide with cross-jurisdictional operations | $70,000 -- $100,000 | 4 weeks |
+
+---
+
+## Relationship to Other Frankmax Services
+
+- **PIAR** identifies that failure paths exist; Failure Propagation models the full cascade
+- **Authority & Liability Mapping** provides the authority chain data that Failure Propagation uses to model accountability cascades
+- **Jurisdictional Exposure** extends blast-radius modeling across regulatory boundaries
+- **Decision Defensibility Structuring** implements the containment architecture that Failure Propagation recommends

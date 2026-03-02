@@ -6,4 +6,148 @@ tags: [economic-model]
 
 # Unit Economics Model
 
-<!-- TODO: Fill from MARKETPLACE_OPPORTUNITY_CATALOG.md Part III -->
+This page presents the FrankMax marketplace unit economics across a 3-year projection, sensitivity analysis under stress scenarios, and the critical attachment rate threshold that determines whether the business lives or dies.
+
+---
+
+## Y1-Y3 Unit Economics (Per-Customer Basis)
+
+| Metric | Year 1 | Year 2 | Year 3 |
+|---|---|---|---|
+| **Customers** | 50 | 250 | 1,000 |
+| **Avg. Monthly AI Spend (Burger)** | $2,000 | $3,500 | $5,000 |
+| **Burger Margin** | 8% | 12% | 15% |
+| **Burger Gross Profit / Customer / Month** | $160 | $420 | $750 |
+| **Avg. Fries Attachment Rate** | 35% | 45% | 55% |
+| **Avg. Fries Revenue / Customer / Month** | $1,400 | $3,150 | $5,500 |
+| **Blended Fries Margin** | 72% | 76% | 80% |
+| **Fries Gross Profit / Customer / Month** | $1,008 | $2,394 | $4,400 |
+| **Total Gross Profit / Customer / Month** | $1,168 | $2,814 | $5,150 |
+| **CAC (Customer Acquisition Cost)** | $5,000 | $4,000 | $3,000 |
+| **Payback Period (Months)** | 4.3 | 1.4 | 0.6 |
+| **LTV (36-Month)** | $42,048 | $101,304 | $185,400 |
+| **LTV:CAC Ratio** | 8.4x | 25.3x | 61.8x |
+
+### Revenue Summary (Annual)
+
+| Revenue Line | Year 1 | Year 2 | Year 3 |
+|---|---|---|---|
+| **Burger Revenue** | $1.2M | $10.5M | $60.0M |
+| **Fries Revenue** | $840K | $9.5M | $66.0M |
+| **Total Revenue** | $2.04M | $20.0M | $126.0M |
+| **Total Gross Profit** | $700K | $8.4M | $61.8M |
+| **Gross Margin (Blended)** | 34% | 42% | 49% |
+
+---
+
+## Why Margins Improve Over Time
+
+Burger margins improve because the [Kitchen systems](/economic-model/burger-fries-kitchen#the-kitchen-compounding-moat) compound:
+
+| Kitchen System | Y1 Impact | Y3 Impact | Why |
+|---|---|---|---|
+| **Model Routing Intelligence** | Routes 60% of requests optimally | Routes 90%+ optimally | 2 years of task-model performance data |
+| **Semantic Caching** | 25% cache hit rate | 50%+ cache hit rate | Cache grows with usage volume and domain coverage |
+| **Fine-Tuned Models** | 2 industry verticals | 10+ verticals | Each vertical's data trains the next vertical faster |
+| **Failure Pattern Library** | Catches 30% of known failure modes | Catches 80%+ | Failure library compounds monotonically |
+
+Fries margins improve because attachment rates increase with habit formation and switching costs:
+
+| Year | Attachment Rate | Driver |
+|---|---|---|
+| Y1: 35% | Customers buy governance/compliance because regulators require it |
+| Y2: 45% | Habit engineering kicks in; customers depend on audit trails and workflow templates |
+| Y3: 55% | Full switching cost lock-in; leaving means rebuilding compliance, retraining staff, losing audit history |
+
+---
+
+## Sensitivity Analysis
+
+What happens when things go wrong:
+
+| Scenario | Attachment Rate | Burger Margin | Y3 Revenue | Y3 Gross Profit | Outcome |
+|---|---|---|---|---|---|
+| **Base Case** | 55% | 15% | $126.0M | $61.8M | Healthy; self-sustaining |
+| **Slow Fries Adoption** | 40% | 15% | $96.0M | $42.0M | Viable but tight; must cut kitchen investment |
+| **Burger Margin Compression** | 55% | 5% | $126.0M | $55.8M | Fries carry the load; still viable |
+| **Both Compressed** | 40% | 5% | $96.0M | $36.0M | Survival mode; need to raise or cut |
+| **Competitor Price War** | 55% | -5% | $126.0M | $49.8M | Burger bleeds; fries must cover; viable short-term |
+| **Regulatory Delay** | 30% | 15% | $72.0M | $27.0M | Below sustainability threshold; pivot required |
+| **70% Revenue Drop** | 20% | 8% | $37.8M | $12.6M | Existential; must find alternative revenue or shut down |
+
+---
+
+## The 40% Attachment Rate Threshold
+
+This is the single most important number in the FrankMax economic model.
+
+### Why 40%
+
+At 40% average fries attachment:
+- Fries revenue covers the burger subsidy
+- Kitchen development is self-funded from operating cash flow
+- Customer acquisition is funded from fries margin, not external capital
+- The business is **self-sustaining** without additional fundraising
+
+Below 40%:
+- Burger subsidy exceeds fries margin
+- Kitchen development must be funded externally
+- Customer acquisition becomes a cash burn
+- The business is a **discount AI reseller** losing money on every transaction
+
+### What Drives Attachment Above 40%
+
+| Driver | Mechanism | Target Attachment Lift |
+|---|---|---|
+| **Regulatory Requirements** | Governance, audit trails, and compliance wrappers are mandatory for regulated industries | +15-20% baseline |
+| **Habit Engineering** | Daily/hourly touchpoints create behavioral dependency ([see strategy](/economic-model/habit-engineering)) | +10-15% over 6 months |
+| **Switching Costs** | Audit history, trained models, and workflow templates cannot be exported | +5-10% retention lift |
+| **Bundle Pricing** | Fries are cheaper when bought with the burger than standalone | +5-8% at point of sale |
+| **Outcome Demonstration** | Show measurable ROI from each fries layer within 30 days | +3-5% conversion lift |
+
+### Monitoring the Threshold
+
+Attachment rate is tracked at three levels:
+
+| Level | Metric | Frequency | Alert Threshold |
+|---|---|---|---|
+| **Portfolio** | Average attachment rate across all customers | Daily | Below 40% for 7 consecutive days |
+| **Cohort** | Attachment rate by customer signup month | Weekly | Any cohort below 35% at month 3 |
+| **Individual** | Per-customer attachment rate | Real-time | Customer below 25% at month 2 (churn risk) |
+
+---
+
+## Cost Structure
+
+| Cost Category | Y1 | Y2 | Y3 | Notes |
+|---|---|---|---|---|
+| **AI Model Costs (COGS)** | $1.1M | $8.4M | $51.0M | Scales with burger volume; offset by caching/routing |
+| **Infrastructure** | $200K | $800K | $3.0M | Cloud, CDN, database, monitoring |
+| **Engineering** | $300K | $1.2M | $4.0M | Core team of 3 (Y1) to 15 (Y3) |
+| **Sales & Marketing** | $250K | $1.0M | $3.0M | Content-led; no enterprise sales team Y1 |
+| **Compliance & Legal** | $100K | $400K | $1.5M | Certification costs, legal review, regulatory engagement |
+| **G&A** | $50K | $200K | $500K | Accounting, insurance, office |
+| **Total Operating Cost** | $2.0M | $12.0M | $63.0M | |
+| **Operating Profit** | -$1.3M | $8.0M | $63.0M | Breakeven at ~Month 14 of Y2 |
+
+---
+
+## Key Assumptions
+
+| Assumption | Value | Risk If Wrong |
+|---|---|---|
+| Average customer monthly AI spend | $2K-$5K growing | If customers spend less, need more customers for same revenue |
+| Fries attachment rate | 35% Y1 to 55% Y3 | Below 40% sustained = existential (see above) |
+| Burger cost reduction from Kitchen | 5% Y1 to 15% Y3 | If caching/routing underperforms, burger margin goes negative |
+| Customer churn (annual) | 15% Y1, 10% Y2, 7% Y3 | Higher churn means higher CAC and lower LTV |
+| Average fries revenue per customer | $1.4K-$5.5K/month | If customers buy fewer/cheaper fries, margins compress |
+| Regulatory tailwind | Moderate (2-3 jurisdictions with AI governance mandates by Y2) | If regulation is delayed, attachment rates for compliance layers drop |
+
+---
+
+## Related
+
+- [Burger / Fries / Kitchen Framework](/economic-model/burger-fries-kitchen) — The strategic model behind these numbers
+- [High-Margin Attachment Layers](/economic-model/attachment-layers) — Deep dive into each fries layer
+- [Habit Engineering Strategy](/economic-model/habit-engineering) — How attachment rates are driven above 40%
+- [Structural Dominance Strategy](/economic-model/structural-dominance) — Long-term defensibility

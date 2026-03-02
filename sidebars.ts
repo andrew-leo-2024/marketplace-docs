@@ -4,7 +4,12 @@ const sidebars: SidebarsConfig = {
   mainSidebar: [
     {
       type: 'doc',
-      id: '_recovery/index',
+      id: 'index',
+      label: 'Home',
+    },
+    {
+      type: 'doc',
+      id: 'recovery/index',
       label: 'Agent Recovery Prompt',
     },
     {

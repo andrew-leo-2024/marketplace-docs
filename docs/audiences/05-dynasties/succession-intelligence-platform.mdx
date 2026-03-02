@@ -7,13 +7,17 @@ tags: [audience-5, strategic, marketplace]
 # Succession Intelligence Platform
 
 <div className="entity-badge entity-badge--frankmax">Frankmax</div>
-<span className="naics-tag">Audience 5</span>
+<span className="naics-tag">NAICS 525920</span>
 
-> **Dynasties & Royal Houses** — Dynasty Continuity & Governance
+> **Dynasties & Royal Houses** — Governance Module
 
 ## Objective & Purpose
 
-Generational wealth transfer fails 70% by 2nd generation; AI models succession scenarios
+Generational wealth transfer fails 70% of the time by the second generation and 90% by the third. The Succession Intelligence Platform uses AI to model succession scenarios across multiple dimensions --- leadership capability, family dynamics, legal constraints, tax implications, and stakeholder readiness --- producing evidence-based succession plans that account for the full complexity of dynastic transitions rather than relying on tradition or assumption.
+
+Succession in dynastic contexts is fundamentally different from corporate succession planning. The decision space includes primogeniture customs, religious law, political considerations, inter-family treaties, and emotional dynamics that corporate models ignore entirely. This platform builds multi-variable succession models that weight traditional expectations alongside competency assessments, stakeholder alignment scores, and jurisdiction-specific legal requirements (Sharia inheritance rules, European noble succession law, trust deed provisions).
+
+The platform also runs "what-if" simulations: what happens if the designated successor declines, becomes incapacitated, or is deemed unsuitable by key stakeholders? What are the cascading effects on asset structures, political relationships, and philanthropic commitments? By modeling these scenarios in advance, dynasty leadership can prepare contingency plans that prevent the paralysis and internal conflict that destroy multi-generational wealth.
 
 ## Business Context
 
@@ -23,46 +27,89 @@ Generational wealth transfer fails 70% by 2nd generation; AI models succession s
 | **Business Function** | Governance |
 | **Category** | Strategic |
 | **Target Audience** | 5. Dynasties & Royal Houses |
+| **Bundle** | Dynasty/Family Office Continuity Pack ($12,000/mo) |
+| **Monthly Cost of Inaction** | $5M+ in wealth destruction from unprepared generational transitions |
 
 ## BPMN Workflow
 
 ```mermaid
-graph LR
-    A[Input] --> B[Succession Intelligence Platform]
-    B --> C[Processing]
-    C --> D[Output]
-    D --> E[Audit Trail]
+graph TD
+    A[Map Dynasty Family Tree and Roles] --> B[Assess Candidate Competencies]
+    B --> C[Model Legal and Tax Succession Constraints]
+    C --> D[Evaluate Stakeholder Alignment]
+    D --> E[Generate Succession Scenarios]
+    E --> F[Run What-If Simulations]
+    F --> G[Rank Scenarios by Risk and Continuity Score]
+    G --> H[Present to Dynasty Leadership]
+    H --> I{Plan Approved?}
+    I -->|Yes| J[Create Transition Roadmap]
+    I -->|Refine| E
+    J --> K[Monitor Readiness Milestones]
+    K --> L[Trigger Transition Protocols When Ready]
 ```
-
-<!-- TODO: Expand BPMN with actual process steps -->
 
 ## Features
 
-<!-- TODO: Define 5-8 key features -->
-
-1. Feature 1
-2. Feature 2
-3. Feature 3
+1. **Dynasty Family Tree Mapper** --- Builds a living organizational chart of the dynasty including roles, relationships, competencies, and succession eligibility status across all branches.
+2. **Competency Assessment Framework** --- Evaluates potential successors against customizable criteria: leadership capability, domain knowledge, stakeholder relationships, and cultural fluency.
+3. **Legal Constraint Modeler** --- Maps succession rules across all relevant jurisdictions (inheritance law, trust provisions, corporate governance requirements, religious law) and identifies conflicts.
+4. **Stakeholder Alignment Scoring** --- Quantifies support levels from key stakeholders (family elders, board members, political allies, institutional partners) for each succession scenario.
+5. **What-If Simulation Engine** --- Models cascading effects of succession decisions on asset structures, political relationships, philanthropic commitments, and family dynamics.
+6. **Transition Roadmap Generator** --- Produces detailed timelines for succession transitions, including role handovers, authority transfers, communication plans, and contingency triggers.
+7. **Readiness Monitoring Dashboard** --- Tracks successor development milestones, stakeholder engagement progress, and legal preparation status against the transition timeline.
 
 ## Workflow & Automation
 
-<!-- TODO: Step-by-step automation description -->
+**Step 1: Dynasty Mapping** --- Input family structure, roles, asset ownership, legal entities, and relationship dynamics into the platform. AI identifies potential successors and succession paths.
+
+**Step 2: Competency Assessment** --- Potential successors are evaluated against governance, financial, diplomatic, and cultural competency frameworks customized to the dynasty's specific needs.
+
+**Step 3: Constraint Analysis** --- Legal and tax implications of each succession scenario are modeled across all relevant jurisdictions, identifying blockers and optimization opportunities.
+
+**Step 4: Scenario Modeling** --- AI generates ranked succession scenarios weighing competency scores, stakeholder alignment, legal feasibility, and tax efficiency.
+
+**Step 5: Simulation and Stress Testing** --- Each scenario is stress-tested against adverse events (sudden incapacitation, family disputes, regulatory changes, political shifts) to assess resilience.
+
+**Step 6: Roadmap Execution** --- The approved plan becomes an active roadmap with milestone tracking, automated reminders, and progress reporting to dynasty leadership.
 
 ## Input/Output Specifications
 
-| Direction | Data | Format |
-|---|---|---|
-| Input | <!-- TODO --> | <!-- TODO --> |
-| Output | <!-- TODO --> | <!-- TODO --> |
+| Direction | Data | Format | Description |
+|---|---|---|---|
+| Input | Family structure data | Secure web form, JSON | Family tree, roles, relationships, competencies |
+| Input | Legal and trust documents | PDF, DOCX | Trust deeds, wills, corporate governance documents |
+| Input | Jurisdictional legal frameworks | Database | Inheritance, corporate, and religious law provisions |
+| Output | Succession scenario reports | PDF, dashboard | Ranked scenarios with risk and continuity scores |
+| Output | Transition roadmaps | PDF, Gantt chart | Detailed timelines with milestones and contingencies |
+| Output | Readiness dashboards | Web, API | Real-time successor development tracking |
 
 ## Integration Points
 
-<!-- TODO: Connections to other systems -->
+| System | Integration Type | Data Flow |
+|---|---|---|
+| Dynasty Knowledge Vault | API | Bidirectional family history and institutional memory |
+| Multi-Jurisdiction Asset Shield | API | Inbound asset structure and legal entity data |
+| Private Treaty Analyzer | API | Inbound inter-family agreement constraints |
+| Legal Document Management | API | Inbound trust deeds and governance documents |
+| Reputation Risk Sentinel | API | Inbound reputational risk factors for candidates |
 
 ## Pricing & Revenue Model
 
-<!-- TODO: From economic model -->
+| Component | Price |
+|---|---|
+| Dynasty/Family Office Continuity Pack | $12,000/mo |
+| Succession Simulation Engine | Included in pack |
+| Multi-Jurisdiction Legal Modeling | Included |
+| What-If Scenario Analysis | Included |
+| ORF Governance Layer | Included |
+
+Revenue is anchored by the $12,000/mo Continuity Pack, which bundles succession planning with other dynasty tools. The high-touch nature of dynastic succession drives premium consulting attach rates of 40-60%, with individual engagement values of $100K-$500K for comprehensive succession planning projects. Once embedded in a dynasty's governance framework, the platform becomes the institutional memory for succession planning, creating multi-decade retention.
 
 ## NAICS/SIC Mapping
 
-<!-- TODO: Industry codes -->
+| NAICS | SIC | Industry | Relevance |
+|---|---|---|---|
+| 525920 | 6726 | Trusts, Estates, and Agency Accounts | Primary: dynastic wealth and succession management |
+| 551112 | 6712 | Offices of Other Holding Companies | Secondary: family holding company governance |
+| 541611 | 7371 | Administrative Management Consulting | Tertiary: succession advisory services |
+| 541199 | 7389 | All Other Legal Services | Tertiary: succession-related legal analysis |

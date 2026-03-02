@@ -6,4 +6,198 @@ tags: [economic-model]
 
 # High-Margin Attachment Layers (The Fries)
 
-<!-- TODO: Fill from MARKETPLACE_OPPORTUNITY_CATALOG.md Part III -->
+Each attachment layer is designed to do three things: generate high-margin revenue, create switching costs that increase over time, and feed data back into the [Kitchen](/economic-model/burger-fries-kitchen#the-kitchen-compounding-moat). Below is the detailed breakdown of all 10 layers.
+
+---
+
+## Layer 1: Governance & Compliance Wrappers
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 70-85% |
+| **Attachment Rate** | 60% |
+| **Revenue Model** | Per-transaction fee + monthly subscription |
+| **Primary Buyers** | Banks, insurers, government agencies, healthcare systems |
+
+**What it is**: Pre-built compliance rules that wrap around AI model outputs. Every AI response is checked against jurisdiction-specific regulatory requirements before reaching the end user. Covers data privacy (GDPR, CCPA), financial regulation (Basel III/IV, MiFID II), healthcare (HIPAA, FDA), and government (FedRAMP, NIST AI RMF).
+
+**Why it creates switching costs**: Compliance wrappers accumulate organization-specific policy configurations over months. A bank running 200 AI workflows has 200 custom compliance rule sets. Switching to a competitor means reconfiguring all 200 from scratch — and re-validating each with the compliance team. No one does this voluntarily.
+
+**Kitchen data generated**: Every compliance check feeds the Compliance Policy Engine, improving coverage and reducing false positives across the ecosystem.
+
+---
+
+## Layer 2: Industry-Specific Workflow Templates
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 80-90% |
+| **Attachment Rate** | 45% |
+| **Revenue Model** | Per-template license + customization fees |
+| **Primary Buyers** | Mid-market enterprises, consulting firms, government departments |
+
+**What it is**: Pre-built, tested AI workflow templates for specific industry processes. Examples: insurance claims triage, legal contract review, government permit processing, healthcare prior authorization, financial statement analysis. Each template encodes domain expertise, regulatory requirements, and best-practice prompting.
+
+**Why it creates switching costs**: Templates are customized per customer over time — field mappings, approval chains, exception handling, output formats. After 6 months of customization, the template is effectively a bespoke system. Rebuilding on a competitor platform means re-doing 6 months of configuration and re-training all users.
+
+**Kitchen data generated**: Template usage patterns feed the Industry Ontology, making templates more precise and enabling faster template creation for adjacent verticals.
+
+---
+
+## Layer 3: Audit Trail & Traceability
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 75-85% |
+| **Attachment Rate** | 55% (regulated industries) |
+| **Revenue Model** | Monthly subscription + per-query fees for historical lookups |
+| **Primary Buyers** | Regulated industries (finance, healthcare, government), auditors, legal teams |
+
+**What it is**: Complete, immutable record of every AI decision — input data, model used, prompt, output, human reviewer, compliance checks passed/failed, and timestamp. Integrated with [ORF](/protocols/orf) obligation tracking and [ETLB](/protocols/etlb) liability binding.
+
+**Why it creates switching costs**: Audit trails are cumulative and non-portable. A healthcare system with 2 years of AI decision audit trails cannot migrate that history to a competitor. More critically, regulators and auditors expect *continuous* audit trails — a gap in the record during a platform switch is itself a compliance risk. Customers are locked in by their own audit history.
+
+**Kitchen data generated**: Every audited decision feeds the Audit Evidence Chain and the Failure Pattern Library (failed decisions are flagged and analyzed).
+
+---
+
+## Layer 4: Multi-Model Orchestration
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 65-75% |
+| **Attachment Rate** | 40% |
+| **Revenue Model** | Usage-based (per-orchestrated request) |
+| **Primary Buyers** | Enterprises running complex AI workflows, technology teams |
+
+**What it is**: Intelligent routing and chaining of multiple AI models within a single workflow. A document processing pipeline might use Llama for OCR extraction, Claude for analysis, and a fine-tuned model for classification — orchestrated as a single request with unified error handling, retry logic, and cost optimization.
+
+**Why it creates switching costs**: Orchestration configurations encode months of performance tuning — which model combinations work best for which tasks, optimal routing rules, fallback chains, and cost/quality tradeoffs. These configurations are proprietary to the FrankMax orchestration engine and cannot be exported.
+
+**Kitchen data generated**: Orchestration performance data feeds Model Routing Intelligence, improving routing accuracy for all customers.
+
+---
+
+## Layer 5: Failure Intelligence Feeds
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 85-95% |
+| **Attachment Rate** | 20% |
+| **Revenue Model** | Monthly subscription (tiered by industry coverage) |
+| **Primary Buyers** | Risk managers, AI safety teams, CISOs, insurance underwriters |
+
+**What it is**: Real-time feeds of AI failure patterns aggregated (anonymized) across the ecosystem. Subscribers learn about failure modes — hallucination patterns, edge cases, model degradation signals, adversarial inputs — before they encounter them in their own systems.
+
+**Why it creates switching costs**: The value of failure intelligence increases with time. A subscriber who has been receiving feeds for 12 months has built internal processes, alerting rules, and model guardrails based on that data. Switching means losing the intelligence stream and rebuilding detection from scratch during the gap.
+
+**Kitchen data generated**: This layer *is* the Kitchen's Failure Pattern Library, directly monetized as a subscription product.
+
+---
+
+## Layer 6: Operator Certification
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 90%+ |
+| **Attachment Rate** | 15% |
+| **Revenue Model** | Per-certification fee (individual) + organizational certification programs |
+| **Primary Buyers** | Consulting firms, system integrators, government contractors, training departments |
+
+**What it is**: Standardized certification for humans who operate, supervise, or make decisions based on AI outputs. Certification levels cover AI literacy, domain-specific AI usage (healthcare AI operator, financial AI operator), compliance awareness, and incident response. Certified operators are tracked in the Operator Performance Graph.
+
+**Why it creates switching costs**: Once an organization has certified its staff through FrankMax, those certifications are tied to the FrankMax ecosystem. Certified operators are listed in the Operator Performance Graph, building reputation over time. Switching platforms means losing certification status, performance history, and reputation — for every certified individual.
+
+**Kitchen data generated**: Certification outcomes and post-certification performance feed the Operator Performance Graph, enabling quality scoring and matching.
+
+---
+
+## Layer 7: Insurance & Liability Products
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 60-70% |
+| **Attachment Rate** | 30% |
+| **Revenue Model** | Premium-based (per-obligation, per-system, or portfolio coverage) |
+| **Primary Buyers** | Enterprises deploying AI in high-stakes domains, boards requiring AI liability coverage |
+
+**What it is**: AI liability insurance products underwritten using ecosystem data — [MCO](/protocols/mco) status, [ETLB](/protocols/etlb) binding records, failure rates, compliance scores, and operator certification levels. Policies cover AI decision errors, regulatory fines, data breaches from AI misuse, and third-party claims arising from AI outputs.
+
+**Why it creates switching costs**: Insurance underwriting is based on ecosystem data. An insurer who has underwritten a customer based on 18 months of FrankMax telemetry cannot transfer that risk profile to a competitor's ecosystem. The customer would need to rebuild their risk profile from scratch, likely at higher premiums during the transition.
+
+**Kitchen data generated**: Claims data, near-miss data, and risk assessments feed the Failure Pattern Library and Compliance Policy Engine.
+
+---
+
+## Layer 8: Custom Fine-Tuning
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 70-80% |
+| **Attachment Rate** | 25% |
+| **Revenue Model** | Project fee (fine-tuning engagement) + monthly hosting/serving fees |
+| **Primary Buyers** | Enterprises with proprietary data, specialized domain requirements |
+
+**What it is**: Fine-tuning of open-source or provider models on customer-specific data to achieve specialist-level performance at commodity model cost. A law firm fine-tunes a model on 10 years of contract review data; a hospital fine-tunes on radiology reports; a government agency fine-tunes on permit applications.
+
+**Why it creates switching costs**: The fine-tuned model is trained on the customer's data within the FrankMax infrastructure. While the customer owns their data, the trained model weights, training pipeline, and serving infrastructure are FrankMax-specific. Recreating the fine-tuned model on a competitor's platform means re-running the entire training process — weeks of work and thousands of dollars.
+
+**Kitchen data generated**: Fine-tuning outcomes feed Model Routing Intelligence (which base models fine-tune best for which tasks) and Industry Ontology (domain-specific terminology and patterns).
+
+---
+
+## Layer 9: Priority SLA & Support
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 80-90% |
+| **Attachment Rate** | 35% |
+| **Revenue Model** | Monthly subscription (tiered: Standard, Premium, Enterprise) |
+| **Primary Buyers** | Production-critical deployments, 24/7 operations, regulated environments |
+
+**What it is**: Guaranteed response times, dedicated support engineers, priority request routing, and uptime SLAs. Enterprise tier includes a named account engineer, quarterly business reviews, and priority access to new features and model releases.
+
+**Why it creates switching costs**: Support relationships are inherently sticky. After 6 months, the support team understands the customer's architecture, common issues, and business context. Switching means starting over with a new support team that has zero institutional knowledge. For production-critical AI, this is an unacceptable risk.
+
+**Kitchen data generated**: Support tickets and incident reports feed the Failure Pattern Library and Usage Telemetry (identifying systemic issues before they affect other customers).
+
+---
+
+## Layer 10: Data Sovereignty & Residency
+
+| Attribute | Value |
+|---|---|
+| **Gross Margin** | 85-95% |
+| **Attachment Rate** | 50% (government and regulated sectors) |
+| **Revenue Model** | Per-deployment fee + monthly residency surcharge |
+| **Primary Buyers** | Government agencies, defense contractors, healthcare systems, EU-based enterprises |
+
+**What it is**: Guaranteed data processing within specified jurisdictions. Customer data never leaves the designated geography. Includes sovereign cloud deployment, jurisdiction-specific encryption, and compliance certification for local data protection laws (GDPR, PDPA, LGPD, POPIA, etc.).
+
+**Why it creates switching costs**: Data sovereignty configurations are deeply embedded in infrastructure. Moving to a competitor means re-certifying data residency compliance, re-negotiating with cloud providers for sovereign deployment, and proving to regulators that the migration itself did not violate data residency requirements. For government customers, this process can take 6-12 months.
+
+**Kitchen data generated**: Deployment patterns feed the Compliance Policy Engine (jurisdiction-specific requirements) and Usage Telemetry (geographic usage distribution).
+
+---
+
+## Attachment Rate by Customer Segment
+
+Not all customers attach at the same rate. Regulated industries attach faster and deeper because many fries layers are compliance requirements, not optional add-ons.
+
+| Segment | Y1 Attachment Rate | Y3 Attachment Rate | Primary Layers |
+|---|---|---|---|
+| **Government** | 55% | 70% | Governance, Audit Trail, Data Sovereignty, Certification |
+| **Financial Services** | 50% | 65% | Governance, Audit Trail, Insurance, Orchestration |
+| **Healthcare** | 45% | 60% | Governance, Audit Trail, Data Sovereignty, Fine-Tuning |
+| **Legal & Consulting** | 35% | 50% | Workflow Templates, Certification, Priority SLA |
+| **Technology** | 25% | 40% | Orchestration, Fine-Tuning, Failure Intelligence |
+| **General Enterprise** | 20% | 35% | Workflow Templates, Priority SLA, Orchestration |
+
+---
+
+## Related
+
+- [Burger / Fries / Kitchen Framework](/economic-model/burger-fries-kitchen) — The strategic model these layers plug into
+- [Unit Economics Model](/economic-model/unit-economics) — How attachment rates drive revenue
+- [Habit Engineering Strategy](/economic-model/habit-engineering) — How customers are driven to attach
+- [Structural Dominance Strategy](/economic-model/structural-dominance) — How attachment layers compound into market control

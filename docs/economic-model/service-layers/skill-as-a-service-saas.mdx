@@ -6,4 +6,54 @@ tags: [service-layer, economic-model]
 
 # Skill-as-a-Service (SaaS)
 
-<!-- TODO: Fill from Part IX -->
+## Definition
+
+Skill-as-a-Service (SaaS) delivers composite AI skills -- multi-step sequences of capabilities chained together to perform a complete business task. Where CaaS provides "extract data from this document," SaaS provides "process this insurance claim end-to-end: extract data, validate against policy terms, check for fraud indicators, calculate payout, and draft the decision letter."
+
+SaaS represents the second rung on the Fries ladder. It bundles multiple CaaS invocations into a single skill execution with its own governance wrapper, error handling, and human escalation points. Each skill is domain-specific, pre-validated for accuracy, and priced at a premium over the sum of its component capabilities because the orchestration logic itself is the value.
+
+## How It Works
+
+1. Customer invokes a skill from the catalog (e.g., "Process Insurance Claim")
+2. The skill engine decomposes the task into ordered capability steps
+3. Each step executes with its own governance check and output validation
+4. Human escalation triggers if confidence drops below configured thresholds
+5. Final output aggregated, formatted, and delivered with full step-by-step audit trail
+6. Skill performance data feeds pattern optimization in the Kitchen layer
+
+## Target Audiences
+
+- **Primary**: Audience 7 (Enterprise IT), Audience 8 (HR/Talent), Audience 14 (Founders)
+- **Secondary**: Audience 9 (Financial Services), Audience 10 (Healthcare)
+- **Attach Rate**: Highest with Bundle 3 (Enterprise Operations) and Bundle 4 (Founder Sprint)
+
+## Pricing Model
+
+- **Per-execution**: $2-$50 per skill execution depending on complexity
+- **Subscription**: $150-$900/month for unlimited executions of specific skill packs
+- **Custom skills**: $5,000 one-time build fee + $500/month for custom skill development
+- **Enterprise volume**: Negotiated rates at 1,000+ executions/month
+
+## Revenue Economics
+
+| Metric | Value |
+|---|---|
+| Gross Margin | 72-85% |
+| AI Compute Cost | 12-22% of execution price |
+| Orchestration Overhead | 3-6% |
+| Average Monthly Revenue per Customer | $150-$3,200 |
+| Margin Expansion Trigger | Skill reuse across customers amortizes build cost |
+
+SaaS margins are structurally higher than CaaS because the orchestration logic is built once and sold thousands of times. A skill that costs $15,000 to develop and validate generates $150K+ in annual revenue across 50 customers.
+
+## BPMN Workflow
+
+```mermaid
+flowchart LR
+    A[Skill Invocation] --> B[Task Decomposition]
+    B --> C[Step 1: CaaS Execution]
+    C --> D[Step N: CaaS Execution]
+    D --> E[Human Escalation Gate]
+    E --> F[Output Aggregation]
+    F --> G[Audit Trail + Billing]
+```

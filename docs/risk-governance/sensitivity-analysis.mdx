@@ -1,9 +1,240 @@
 ---
 title: "Sensitivity Analysis"
 sidebar_position: 4
-tags: [risk-governance]
+tags: [risk-governance, sensitivity, margin, attachment-rate]
 ---
 
 # Sensitivity Analysis
 
-<!-- TODO: Fill from Parts V, VI, XI -->
+The marketplace's economic model depends on a single critical variable: **the governance attachment rate** -- the percentage of "Burger" (AI model access) buyers who also purchase "Fries" (governance layers). This analysis models what happens when that rate drops to 30%, 50%, and 70% of the baseline 40% target.
+
+## The Attachment Rate Problem
+
+The "Burger" (AI model access at 80% below provider pricing) is a loss leader. It is sold below cost to attract customers. The margin comes from the "Fries" (governance, compliance, audit layers at 70-95% margin). If customers buy the Burger without the Fries, the marketplace subsidizes their AI consumption and loses money on every transaction.
+
+**Critical threshold:** 40% attachment rate. Below this, the Fries margin cannot offset the Burger subsidy. The marketplace operates at a net loss and cannot sustain operations.
+
+## Baseline Assumptions
+
+| Parameter | Baseline Value |
+|---|---|
+| Average Burger revenue per customer/month | $2,000 |
+| Burger gross margin | -15% (loss leader, sold below cost) |
+| Average Fries revenue per attached customer/month | $5,000 |
+| Fries gross margin | 75% |
+| Total customers (Y3 steady state) | 300 |
+| Attachment rate target | 40% |
+| Monthly operating expenses (fixed) | $150,000 |
+
+## Scenario Analysis
+
+### Scenario 1: Baseline (40% Attachment Rate)
+
+| Metric | Monthly | Annual |
+|---|---|---|
+| Total customers | 300 | 300 |
+| Burger customers (all) | 300 | 300 |
+| Fries customers (40%) | 120 | 120 |
+| Burger revenue | $600,000 | $7,200,000 |
+| Burger gross profit | -$90,000 | -$1,080,000 |
+| Fries revenue | $600,000 | $7,200,000 |
+| Fries gross profit | $450,000 | $5,400,000 |
+| **Total revenue** | **$1,200,000** | **$14,400,000** |
+| **Total gross profit** | **$360,000** | **$4,320,000** |
+| Operating expenses | $150,000 | $1,800,000 |
+| **Net operating income** | **$210,000** | **$2,520,000** |
+| **Net margin** | **17.5%** | **17.5%** |
+
+At 40% attachment, the marketplace is profitable with a 17.5% net margin. The Fries gross profit ($450K/month) more than offsets the Burger loss ($90K/month) and covers operating expenses.
+
+### Scenario 2: Attachment Rate at 30% (-25% from baseline)
+
+| Metric | Monthly | Annual |
+|---|---|---|
+| Total customers | 300 | 300 |
+| Burger customers (all) | 300 | 300 |
+| Fries customers (30%) | 90 | 90 |
+| Burger revenue | $600,000 | $7,200,000 |
+| Burger gross profit | -$90,000 | -$1,080,000 |
+| Fries revenue | $450,000 | $5,400,000 |
+| Fries gross profit | $337,500 | $4,050,000 |
+| **Total revenue** | **$1,050,000** | **$12,600,000** |
+| **Total gross profit** | **$247,500** | **$2,970,000** |
+| Operating expenses | $150,000 | $1,800,000 |
+| **Net operating income** | **$97,500** | **$1,170,000** |
+| **Net margin** | **9.3%** | **9.3%** |
+
+**Impact:** Net margin drops from 17.5% to 9.3%. The marketplace remains profitable but has minimal buffer for unexpected costs, hiring, or investment. One bad quarter could tip the business into losses.
+
+**Response options:**
+- Increase Burger pricing (reduce the subsidy, accept lower customer acquisition)
+- Increase Fries pricing (capture more margin per attached customer)
+- Reduce operating expenses to $120K/month
+- Mandatory governance bundling (force attachment rate up)
+
+### Scenario 3: Attachment Rate at 20% (-50% from baseline)
+
+| Metric | Monthly | Annual |
+|---|---|---|
+| Total customers | 300 | 300 |
+| Burger customers (all) | 300 | 300 |
+| Fries customers (20%) | 60 | 60 |
+| Burger revenue | $600,000 | $7,200,000 |
+| Burger gross profit | -$90,000 | -$1,080,000 |
+| Fries revenue | $300,000 | $3,600,000 |
+| Fries gross profit | $225,000 | $2,700,000 |
+| **Total revenue** | **$900,000** | **$10,800,000** |
+| **Total gross profit** | **$135,000** | **$1,620,000** |
+| Operating expenses | $150,000 | $1,800,000 |
+| **Net operating income** | **-$15,000** | **-$180,000** |
+| **Net margin** | **-1.7%** | **-1.7%** |
+
+**Impact:** The marketplace is unprofitable. Monthly losses of $15K accumulate to $180K annually. At this rate, the business burns through any reserves within 12-18 months.
+
+**Response options (all are painful):**
+- **Option A:** Eliminate the Burger subsidy. Sell AI model access at cost or above. Lose the customer acquisition advantage. Become a premium governance vendor competing on quality, not price.
+- **Option B:** Cut operating expenses to $100K/month. This requires cutting headcount or founder compensation to near-zero.
+- **Option C:** Increase Fries pricing to $7,500/month per attached customer (+50%). Possible only if value justification is strong enough.
+- **Option D:** Pivot to consulting-only model (PIAR + advisory) and abandon the marketplace model.
+
+### Scenario 4: Attachment Rate at 12% (-70% from baseline)
+
+| Metric | Monthly | Annual |
+|---|---|---|
+| Total customers | 300 | 300 |
+| Burger customers (all) | 300 | 300 |
+| Fries customers (12%) | 36 | 36 |
+| Burger revenue | $600,000 | $7,200,000 |
+| Burger gross profit | -$90,000 | -$1,080,000 |
+| Fries revenue | $180,000 | $2,160,000 |
+| Fries gross profit | $135,000 | $1,620,000 |
+| **Total revenue** | **$780,000** | **$9,360,000** |
+| **Total gross profit** | **$45,000** | **$540,000** |
+| Operating expenses | $150,000 | $1,800,000 |
+| **Net operating income** | **-$105,000** | **-$1,260,000** |
+| **Net margin** | **-13.5%** | **-13.5%** |
+
+**Impact:** Catastrophic. Monthly losses of $105K mean the business model has fundamentally failed. The Fries margin cannot come close to offsetting the Burger subsidy. At this loss rate, the marketplace cannot survive 6 months.
+
+**Response options (emergency):**
+- **Immediate:** Stop the Burger subsidy. Raise AI model access pricing to above-cost. Accept the loss of discount-seeking customers.
+- **Structural:** The marketplace-as-arbitrage model is dead at this attachment rate. Pivot entirely to governance-as-standalone-product, selling governance tools without the AI model access component.
+- **Terminal:** If governance standalone does not sell either, the market is telling you governance is not valued. See [Failure Mode 9](/risk-governance/failure-modes).
+
+## Sensitivity Summary
+
+```mermaid
+xychart-beta
+    title "Net Operating Income vs Attachment Rate"
+    x-axis "Attachment Rate" [12%, 20%, 30%, 40%, 50%, 60%, 70%]
+    y-axis "Annual Net Operating Income ($K)" -1400 -- 5000
+    bar [-1260, -180, 1170, 2520, 3870, 5220, 6570]
+```
+
+| Attachment Rate | Annual Revenue | Annual Net Income | Net Margin | Verdict |
+|---|---|---|---|---|
+| 12% | $9.36M | -$1.26M | -13.5% | Fatal -- model fails |
+| 20% | $10.80M | -$180K | -1.7% | Unsustainable -- burns cash |
+| 30% | $12.60M | $1.17M | 9.3% | Marginal -- no buffer |
+| **40%** | **$14.40M** | **$2.52M** | **17.5%** | **Target -- viable** |
+| 50% | $16.20M | $3.87M | 23.9% | Strong -- room for investment |
+| 60% | $18.00M | $5.22M | 29.0% | Excellent -- fund growth |
+| 70% | $19.80M | $6.57M | 33.2% | Exceptional -- market leader |
+
+## Breakeven Attachment Rate
+
+The breakeven attachment rate -- where total gross profit equals operating expenses -- can be calculated:
+
+**Breakeven condition:** Fries Gross Profit = Burger Loss + Operating Expenses
+
+- Burger loss per month: $90,000
+- Operating expenses per month: $150,000
+- Required Fries gross profit per month: $240,000
+- Fries gross profit per attached customer: $3,750 (75% of $5,000)
+- Required attached customers: 64
+- Required attachment rate: 64/300 = **21.3%**
+
+Below 21.3%, the marketplace cannot cover its costs. The 40% target provides an 87% safety margin above breakeven.
+
+## What Drives Attachment Rate
+
+Understanding the levers that influence attachment rate is essential for managing the margin structure.
+
+### Positive Drivers (increase attachment)
+
+| Driver | Expected Impact | Mechanism |
+|---|---|---|
+| Default governance bundling | +15-25 percentage points | Opt-out is harder than opt-in |
+| Regulatory mandate (EU AI Act) | +10-20 percentage points | Compliance becomes mandatory |
+| Major AI governance incident | +20-40 percentage points (temporary) | Fear-driven adoption |
+| Insurance premium differential | +10-15 percentage points | Economic incentive to govern |
+| Board/C-suite mandate | +5-10 percentage points | Top-down governance requirement |
+| White-label channel partners | +5-10 percentage points | Partners bundle governance by default |
+
+### Negative Drivers (decrease attachment)
+
+| Driver | Expected Impact | Mechanism |
+|---|---|---|
+| Governance perceived as friction | -10-20 percentage points | Users bypass governance to save time |
+| Competitor offers ungoverned access | -5-15 percentage points | Price competition on model access |
+| No enforcement of AI regulations | -10-20 percentage points | Compliance is optional in practice |
+| Enterprise internal governance tools | -5-10 percentage points | Build vs buy for governance |
+| Economic downturn | -5-10 percentage points | Cost-cutting eliminates "nice to have" |
+
+## Scenario: Regulatory Catalyst
+
+If a major AI governance incident occurs (model hallucination causing financial loss, autonomous system causing harm, AI-generated disinformation affecting an election), the attachment rate trajectory changes dramatically.
+
+| Phase | Attachment Rate | Duration | Driver |
+|---|---|---|---|
+| Pre-incident | 25-35% | Months 1-N | Voluntary adoption |
+| Incident occurs | 35-50% (spike) | Week 1-4 | Fear-driven adoption |
+| Regulatory response | 45-60% | Months 2-6 | Mandatory compliance announcements |
+| New normal | 55-70% | Ongoing | Regulation + insurance requirements |
+
+A single major incident can permanently shift the attachment rate from "marginal" (30%) to "excellent" (60%). The marketplace's strategy of building governance infrastructure ahead of demand positions it to capture this transition when it occurs.
+
+## Multi-Variable Sensitivity
+
+Attachment rate is the primary variable, but it interacts with two others: customer count and Fries ARPA.
+
+### Customer Count Sensitivity (at 40% Attachment)
+
+| Customers | Annual Revenue | Annual Net Income | Net Margin |
+|---|---|---|---|
+| 100 | $4.80M | $40K | 0.8% |
+| 200 | $9.60M | $1.28M | 13.3% |
+| **300** | **$14.40M** | **$2.52M** | **17.5%** |
+| 400 | $19.20M | $3.76M | 19.6% |
+| 500 | $24.00M | $5.00M | 20.8% |
+
+At 40% attachment, the marketplace needs at least 150 customers to break even. Below 100, even 40% attachment is insufficient.
+
+### Fries ARPA Sensitivity (at 40% Attachment, 300 Customers)
+
+| Fries ARPA/month | Annual Revenue | Annual Net Income | Net Margin |
+|---|---|---|---|
+| $3,000 | $11.52M | $540K | 4.7% |
+| $4,000 | $12.96M | $1.53M | 11.8% |
+| **$5,000** | **$14.40M** | **$2.52M** | **17.5%** |
+| $7,500 | $18.00M | $5.22M | 29.0% |
+| $10,000 | $21.60M | $7.92M | 36.7% |
+
+Fries ARPA is a strong lever. Increasing governance pricing from $5K to $7.5K/month (50% increase) has the same margin impact as increasing attachment rate from 40% to 60%.
+
+## Key Takeaways
+
+1. **40% is the target, not the minimum.** The minimum viable attachment rate is 21.3%. Below that, the model fails mathematically.
+2. **Default bundling is the single most important architectural decision.** It can swing the attachment rate by 15-25 percentage points, which is the difference between marginal profitability and strong profitability.
+3. **A regulatory catalyst is coming.** The question is when, not if. The marketplace must be positioned to capture the attachment rate spike when it occurs.
+4. **Fries pricing is a stronger lever than Fries volume.** Selling governance at $7,500/month to 120 customers generates the same margin as selling governance at $5,000/month to 180 customers -- with lower support costs.
+5. **Below 20% attachment, pivot.** If after 12 months of operation the attachment rate is below 20%, the marketplace model is failing and a structural pivot is required (standalone governance, pure consulting, or exit).
+
+## Related
+
+- [Failure Mode Analysis](/risk-governance/failure-modes)
+- [Strategic Moat Recommendations](/risk-governance/strategic-moat)
+- [Revenue Priority Stack](/risk-governance/revenue-priority)
+- [TAM by Audience](/cross-audience/tam-by-audience)
+- [Economic Model -- Bundles](/economic-model/bundles)
+- [Agent Recovery Prompt](/recovery)

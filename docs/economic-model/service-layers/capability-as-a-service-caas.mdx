@@ -6,4 +6,54 @@ tags: [service-layer, economic-model]
 
 # Capability-as-a-Service (CaaS)
 
-<!-- TODO: Fill from Part IX -->
+## Definition
+
+Capability-as-a-Service (CaaS) packages discrete AI capabilities -- document analysis, image recognition, language translation, data extraction -- as metered, governed units that organizations consume without building or maintaining the underlying models. Instead of buying a model and figuring out how to deploy it, buyers purchase the capability the model produces: "analyze this contract" rather than "run GPT-4 with these parameters."
+
+CaaS is the foundational Fries layer. It sits directly on top of the Burger (discounted model access) and wraps raw AI inference in governance, logging, and output validation. Every capability invocation is tracked, auditable, and bound to a responsible human via the ETLB protocol. This transforms AI from an unaccountable black box into a metered, governed business service.
+
+## How It Works
+
+1. Customer selects a capability from the CaaS catalog (e.g., "Contract Risk Extraction")
+2. The platform routes the request to the optimal model (cost, latency, accuracy)
+3. Governance wrapper validates inputs, enforces access controls, and binds the request to a named operator
+4. Model executes; output passes through validation and quality gates
+5. Result delivered with full audit trail, cost attribution, and confidence scoring
+6. Telemetry feeds the Kitchen layer (failure rates, accuracy drift, usage patterns)
+
+## Target Audiences
+
+- **Primary**: Audience 7 (Enterprise IT), Audience 14 (Founders/Operators)
+- **Secondary**: Audience 8 (HR/Talent), Audience 10 (Healthcare)
+- **Attach Rate**: Highest with Bundle 3 (Enterprise Operations) and Bundle 4 (Founder Sprint)
+
+## Pricing Model
+
+- **Usage-based**: $0.02-$0.50 per capability invocation depending on complexity
+- **Committed volume**: 20% discount at 10,000+ invocations/month
+- **Subscription floor**: $200/month minimum for catalog access
+- **Enterprise**: Custom pricing at 50,000+ invocations/month
+
+## Revenue Economics
+
+| Metric | Value |
+|---|---|
+| Gross Margin | 70-82% |
+| AI Compute Cost | 15-25% of invocation price |
+| Platform Overhead | 3-5% |
+| Average Monthly Revenue per Customer | $200-$2,400 |
+| Margin Expansion Trigger | Volume growth reduces per-unit compute cost |
+
+CaaS margin expands with scale because model routing optimization improves with usage data. At 100K invocations/month, the platform can route 40% of requests to cheaper models without quality degradation, pushing margins above 80%.
+
+## BPMN Workflow
+
+```mermaid
+flowchart LR
+    A[Capability Request] --> B[Governance Validation]
+    B --> C[Model Router]
+    C --> D[AI Execution]
+    D --> E[Output Quality Gate]
+    E --> F[Audit Trail + Billing]
+    F --> G[Telemetry to Kitchen]
+```
