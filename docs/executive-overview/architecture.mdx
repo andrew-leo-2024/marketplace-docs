@@ -235,8 +235,106 @@ The modeling layer. Scenario simulation, digital twins, what-if analysis, and ou
 
 ---
 
+## Sovereign Intent Fabric — 6-Layer Architecture (Doc 42)
+
+Beyond the marketplace stack, the Sovereign Intent Fabric (SIF) defines a civilization-scale infrastructure layer. SIF operates above the 7-layer marketplace stack as an intent-driven orchestration membrane. Users declare outcomes; SIF translates intent across systems, jurisdictions, and compute boundaries.
+
+```mermaid
+graph TB
+    subgraph SIF["SOVEREIGN INTENT FABRIC"]
+        L6S["Layer 6: Feedback Memory<br/><i>Learning from outcomes, adjusting behavior</i>"]
+        L5S["Layer 5: Execution Orchestrator<br/><i>Multi-system, multi-jurisdiction execution</i>"]
+        L4S["Layer 4: Exploration Engine<br/><i>Scenario simulation, path discovery</i>"]
+        L3S["Layer 3: Multi-Objective Evaluator<br/><i>Trade-off resolution across constraints</i>"]
+        L2S["Layer 2: Landscape Graph<br/><i>Mapping systems, capabilities, jurisdictions</i>"]
+        L1S["Layer 1: Intent Interface<br/><i>Natural language → structured intent</i>"]
+    end
+
+    L1S --> L2S
+    L2S --> L3S
+    L3S --> L4S
+    L4S --> L5S
+    L5S --> L6S
+    L6S -->|feedback| L1S
+
+    style SIF fill:#0d1b2a,stroke:#778da9,color:#e0e1dd
+    style L1S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+    style L2S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+    style L3S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+    style L4S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+    style L5S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+    style L6S fill:#1b263b,stroke:#415a77,color:#e0e1dd
+```
+
+| SIF Layer | Function | Maps to Marketplace Layer |
+|---|---|---|
+| Intent Interface | Translates natural language intent into structured execution specs | Layer 7 (Simulation) |
+| Landscape Graph | Maps available systems, capabilities, and jurisdictional boundaries | Layer 3 (Memory) |
+| Multi-Objective Evaluator | Resolves trade-offs across cost, compliance, latency, and risk | Layer 4 (Governance) |
+| Exploration Engine | Simulates execution paths before committing resources | Layer 7 (Simulation) |
+| Execution Orchestrator | Coordinates multi-system, multi-jurisdiction execution | Layer 2 (Cognition) |
+| Feedback Memory | Learns from execution outcomes and adjusts future behavior | Layer 3 (Memory) |
+
+**Revenue target:** Y1 $250K → Y2 $1M → Y3 $3M → Y4 $5-8M at $48K/customer/year, 46% margin.
+
+**First product:** Secure Legal AI Node v1 for mid-sized law firms ($36K-$50K/year).
+
+**Detailed pages:** [SIF Architecture](/sovereign-intent-fabric/architecture) | [Revenue Plan](/sovereign-intent-fabric/revenue-plan) | [20 Deliverables](/sovereign-intent-fabric/deliverables/01-sip)
+
+---
+
+## Enhancement Layer — 110-Layer Taxonomy (Doc 39)
+
+The Enhancement Layer sits between raw AI model output and enterprise-ready deployment. 110 layers organized in 11 tiers across 10 superclasses enforce the principle: **capability must grow slower than constraint**.
+
+```mermaid
+graph LR
+    subgraph TIERS["11 TIERS — 110 LAYERS"]
+        T1["Tier 1<br/>Usable<br/><i>L1-10</i>"]
+        T2["Tier 2<br/>Reliable<br/><i>L11-20</i>"]
+        T3["Tier 3<br/>Governed<br/><i>L21-30</i>"]
+        T4["Tier 4<br/>Auditable<br/><i>L31-40</i>"]
+        T5["Tier 5<br/>Composable<br/><i>L41-50</i>"]
+        T6["Tier 6<br/>Scalable<br/><i>L51-60</i>"]
+        T7["Tier 7<br/>Resilient<br/><i>L61-70</i>"]
+        T8["Tier 8<br/>Sovereign<br/><i>L71-80</i>"]
+        T9["Tier 9<br/>Autonomous<br/><i>L81-90</i>"]
+        T10["Tier 10<br/>Civilizational<br/><i>L91-100</i>"]
+        T11["Tier 11<br/>Safeguarded<br/><i>L101-110</i>"]
+    end
+
+    T1 --> T2 --> T3 --> T4 --> T5 --> T6 --> T7 --> T8 --> T9 --> T10 --> T11
+
+    style T1 fill:#1E2761,stroke:#CADCFC,color:#CADCFC
+    style T3 fill:#2d6a4f,stroke:#95d5b2,color:#95d5b2
+    style T4 fill:#2d6a4f,stroke:#95d5b2,color:#95d5b2
+    style T8 fill:#3c096c,stroke:#c77dff,color:#c77dff
+    style T11 fill:#8b0000,stroke:#ff6b6b,color:#ff6b6b
+```
+
+| Superclass | Layers | Focus |
+|---|---|---|
+| Quality | Cross-tier | Output correctness, consistency, factuality |
+| Determinism | Cross-tier | Reproducibility, predictability |
+| Abstraction | Cross-tier | Interface clarity, modularity |
+| Governance | Tiers 3-4, 8 | Policy enforcement, compliance |
+| Economics | Tiers 5-6 | Cost optimization, resource allocation |
+| Observability | Cross-tier | Monitoring, tracing, alerting |
+| Orchestration | Tiers 5-7 | Multi-agent, multi-model coordination |
+| Actuation | Tiers 7-9 | Real-world action execution |
+| Adaptation | Tiers 9-10 | Self-improvement, learning |
+| Experience | Cross-tier | User interaction, cognitive load reduction |
+
+**Detailed pages:** [Enhancement Layer Overview](/enhancement-layer) | [Superclass Reference](/enhancement-layer/superclasses) | [Tier 01: Usable](/enhancement-layer/tier-01-usable) through [Tier 11: Safeguarded](/enhancement-layer/tier-11-safeguarded)
+
+---
+
 ## Related
 
 - [The Marketplace Premise](/executive-overview/premise)
 - [Economic Model Summary](/executive-overview/economics)
 - [Marketplace Statistics](/executive-overview/statistics)
+- [Sovereign Intent Fabric](/sovereign-intent-fabric)
+- [Enhancement Layer](/enhancement-layer)
+- [Organizational Formalization](/organizational-formalization)
+- [Education & Workforce Intelligence](/education-workforce)

@@ -1,0 +1,178 @@
+---
+title: "Tier 01: Usable (Layers 1-10)"
+sidebar_position: 2
+tags: [enhancement-layer, tier-01, usable]
+description: "The foundational 10 layers that convert raw model output into something an enterprise can use. Quality, determinism, abstraction, basic governance, economics, observability, orchestration, actuation, adaptation, and experience."
+---
+
+# Tier 01: Usable
+
+**Layers**: 1-10
+**Purpose**: Convert raw model output into something an enterprise can actually deploy.
+**Principle**: Without Tier 01, you have a chatbot. With it, you have a tool.
+
+Tier 01 establishes one layer from each of the 10 superclasses. This is the minimum viable Enhancement Layer. Every layer above depends on these being operational.
+
+---
+
+## Layers
+
+| Layer | Name | Superclass | Function |
+|---|---|---|---|
+| 1 | **Amplification Layer** | Quality | Increase signal density and reasoning depth through RAG, verification chains, ensemble routing, expert prompting, and iterative refinement |
+| 2 | **Stabilization Layer** | Determinism | Reduce variance via schema enforcement, validators, confidence gates, retry logic, and deterministic post-processors |
+| 3 | **Translation Layer** | Abstraction | Normalize heterogeneity across models via prompt compilation, context compression, output normalization, and vendor-agnostic response schemas |
+| 4 | **Governance Layer** | Governance | Enforce enterprise rules via security scanning, PII detection, compliance checks, human approval gates, and policy rule engines |
+| 5 | **Economic Control Layer** | Economics | Prevent runaway compute via dynamic model selection, token budgeting, session caps, and task-tiering logic |
+| 6 | **Observability Layer** | Observability | Record cognition via prompt logging, intermediate reasoning step tracking, decision path capture, validation result recording, and traceability reports |
+| 7 | **Orchestration Layer** | Orchestration | Coordinate multi-step execution via task decomposition, tool chaining, agent coordination, state persistence, and dependency resolution |
+| 8 | **Actuation Layer** | Actuation | Connect cognition to real-world action via APIs, internal systems, workflow engines, external tool registries, and transactional safeguards |
+| 9 | **Adaptation Layer** | Adaptation | Improve over time via error feedback loops, human review signals, prompt tuning, task performance scoring, and model benchmarking |
+| 10 | **Experience Layer** | Experience | Control human engagement via voice interfaces, visual diff, accessibility enforcement, collaboration workflows, and versioning/rollback UX |
+
+---
+
+## Layer Details
+
+### Layer 1: Amplification Layer (Quality)
+
+**What it does**: Epistemic multiplier. Reduces hallucination probability and increases relevance density.
+
+| Component | Function |
+|---|---|
+| RAG Context Injection | Ground model output with real, retrieved data |
+| Chain-of-Verification | Multi-pass internal adversarial review |
+| Ensemble Routing | Query 2+ models, select best response |
+| Domain Expert Prompts | Inject structured domain priors |
+| Output Refinement Loop | Iterative entropy reduction across passes |
+
+**Risk**: Cost explosion and latency creep if the number of passes, models, and retrieval operations is unbounded.
+
+### Layer 2: Stabilization Layer (Determinism)
+
+**What it does**: Variance suppression. Converts narrative output into structured state transitions.
+
+| Component | Function |
+|---|---|
+| Schema Enforcement | Prevent shape drift in output |
+| Deterministic Validators | Type and logic checks |
+| Confidence Scoring | Probabilistic gating -- reject low-confidence output |
+| Temperature Control | Per-task variance management |
+| Retry with Escalation | On failure, escalate to stronger model |
+
+### Layer 3: Translation Layer (Abstraction)
+
+**What it does**: Abstraction and portability. Eliminates vendor coupling.
+
+| Component | Function |
+|---|---|
+| Prompt Compiler | Optimize prompts per model's quirks |
+| Context Compressor | Increase effective memory bandwidth |
+| Output Normalizer | Uniform format regardless of source model |
+| Code Formatter | Language-specific standards enforcement |
+| Semantic Deduplicator | Remove redundant tokens |
+
+### Layer 4: Governance Layer (Governance)
+
+**What it does**: Liability minimization. Makes the system enterprise-legal.
+
+| Component | Function |
+|---|---|
+| Security Scanner (SAST/DAST) | Prevent supply chain injection before merge |
+| PII Detector | Scrub sensitive data |
+| License Compliance | Check dependency licenses |
+| Cost Limiter | Kill runaway sessions |
+| Human Escalation Gate | Pause for human approval |
+
+### Layer 5: Economic Control Layer (Economics)
+
+**What it does**: Cost arbitration. Turns AI from cost center into managed capital deployment.
+
+| Component | Function |
+|---|---|
+| Dynamic Model Selection | Route by cost-performance curve |
+| Token Budgeting | Cap token spend per task |
+| Session Caps | Hard limits on session duration/cost |
+| Task-Tiering Logic | Premium models for high-value tasks, cheap inference for commodity tasks |
+
+### Layer 6: Observability Layer (Observability)
+
+**What it does**: Audit spine. If you cannot audit reasoning pathways, regulators will eat you alive.
+
+| Component | Function |
+|---|---|
+| Prompt Logging | Record every prompt sent |
+| Reasoning Step Tracking | Log intermediate reasoning |
+| Decision Path Capture | Track which path was taken and why |
+| Validation Result Recording | Store pass/fail results |
+| Traceability Reports | Expose full decision chains |
+
+### Layer 7: Orchestration Layer (Orchestration)
+
+**What it does**: Workflow engine. Turns single responses into processes.
+
+| Component | Function |
+|---|---|
+| Task Decomposition | Break complex requests into steps |
+| Tool Chaining | Sequence tool calls |
+| Agent Coordination | Multi-agent task distribution |
+| State Persistence | Maintain workflow state across steps |
+| Dependency Resolution | Ensure steps execute in correct order |
+
+### Layer 8: Actuation Layer (Actuation)
+
+**What it does**: System interface. The boundary where mistakes become incidents.
+
+| Component | Function |
+|---|---|
+| API Connectors | Integrate with external services |
+| Internal System Access | Connect to enterprise systems |
+| Workflow Engines | Trigger business process automation |
+| External Tool Registries | MCP servers, 8,000+ tools |
+| Transactional Safeguards | Rollback on failure |
+
+### Layer 9: Adaptation Layer (Adaptation)
+
+**What it does**: Learning engine. Static AI infrastructure is obsolete AI infrastructure.
+
+| Component | Function |
+|---|---|
+| Error Feedback Loops | Route failures back to improvement |
+| Human Review Signals | Capture human corrections |
+| Prompt Tuning | Refine prompts based on outcomes |
+| Task Performance Scoring | Measure quality per task type |
+| Model Benchmarking | Compare model performance over time |
+
+### Layer 10: Experience Layer (Experience)
+
+**What it does**: Interaction envelope. Determines adoption velocity.
+
+| Component | Function |
+|---|---|
+| Voice Interface | Spoken interaction with agents |
+| Visual Diff | Image-based code review |
+| Accessibility Checker | WCAG compliance |
+| Collaboration Workflows | Multi-user interaction |
+| Versioning & Rollback UX | Undo and version control |
+
+---
+
+## Implementation Notes
+
+- Tier 01 is the Burger tier. It ships with cheap AI model access at 80% discount.
+- All 10 layers must be operational before Tier 02 layers are activated.
+- Layer 4 (Governance) and Layer 6 (Observability) are mandatory for any customer in a regulated sector (NAICS 52, 62, 92).
+- Layer 5 (Economic Control) is what enables the 80% discount pricing model. Without cost-aware routing, the margin structure collapses.
+
+---
+
+## FrankMax Products at This Tier
+
+| Product | Layers Implemented |
+|---|---|
+| Multi-Model Orchestration Engine | 1, 3, 5, 7 |
+| Governed AI Execution Engine | 2, 4, 6 |
+| Agent Runtime & Identity Kernel | 7, 8 |
+| AI Cost Optimization Engine | 5 |
+| Operator Dashboard | 10 |
+| Enterprise Memory Graph | 9 |

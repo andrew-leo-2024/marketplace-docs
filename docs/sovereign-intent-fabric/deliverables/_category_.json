@@ -1,0 +1,9 @@
+{
+  "label": "Deliverables",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "20 protocol-level deliverables that compose the Sovereign Intent Fabric — from identity primitives through governance constraints."
+  }
+}

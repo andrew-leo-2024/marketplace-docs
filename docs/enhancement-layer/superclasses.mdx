@@ -1,0 +1,184 @@
+---
+title: "10 Enhancement Layer Superclasses"
+sidebar_position: 1
+tags: [enhancement-layer, superclasses, architecture]
+description: "The 10 structural superclasses that organize all 110 enhancement layers: Quality, Determinism, Abstraction, Governance, Economics, Observability, Orchestration, Actuation, Adaptation, Experience."
+---
+
+# 10 Enhancement Layer Superclasses
+
+Every enhancement layer belongs to one of 10 structural superclasses. These are not feature categories. They are control primitives. The superclasses define what type of control a layer exerts over probabilistic cognition.
+
+The original taxonomy started with buckets like "Amplifiers," "Stabilizers," "Codecs," "Armours," "Plugins," and "Addons." Those are subcomponents. The real architecture operates at the superclass level.
+
+---
+
+## Superclass Definitions
+
+### 1. Quality
+
+**Purpose**: Increase signal density and reasoning depth.
+
+RAG context injection, chain-of-verification, ensemble routing, expert prompting, iterative refinement. Without this superclass, you get fluent mediocrity. With it, you get domain-grade output.
+
+**Risk**: Cost explosion and latency creep if unbounded. Every quality layer multiplies token consumption.
+
+**FrankMax mapping**: Multi-Model Orchestration Engine, Domain Knowledge Packs, Output Refinement pipelines.
+
+---
+
+### 2. Determinism
+
+**Purpose**: Reduce variance and enforce structural correctness.
+
+Schema enforcement, validators, confidence gates, retry logic, deterministic post-processors. Converts stochastic output into structured state transitions.
+
+**Risk**: Over-constraining kills adaptability. The tension between determinism and flexibility must be tunable per task.
+
+**FrankMax mapping**: Governed AI Execution Engine, Schema Enforcement modules, Confidence Scoring services.
+
+---
+
+### 3. Abstraction
+
+**Purpose**: Normalize heterogeneity across models and vendors.
+
+Prompt compilation per model, context compression, output normalization, vendor-agnostic response schemas. This superclass prevents vendor lock-in. If it is weak, the entire stack becomes model-coupled.
+
+**Risk**: Abstraction overhead introduces latency and reduces model-specific optimization.
+
+**FrankMax mapping**: Multi-Model Orchestration Engine (model-agnostic routing), Output Normalizer, Prompt Compiler.
+
+---
+
+### 4. Governance
+
+**Purpose**: Enforce enterprise rules before output escapes.
+
+Security scanning, PII detection, compliance checks, human approval gates, policy rule engines, policy versioning, cross-jurisdiction compliance. This is where liability posture lives. No governance superclass means no regulated adoption.
+
+**Risk**: Governance overhead can strangle agility. High-friction systems die internally before they scale.
+
+**FrankMax mapping**: PIAR (Pre-Incident Accountability Review), ORF protocol, Compliance Wrappers, Audit Trail infrastructure.
+
+---
+
+### 5. Economics
+
+**Purpose**: Prevent runaway compute and irrational routing.
+
+Dynamic model selection based on cost-performance curves, token budgeting, session caps, task-tiering logic, cognitive budget allocation, cost-per-quality tracking. Most "AI platforms" ignore this. That is amateur hour.
+
+**Risk**: Economic optimization can throttle performance below acceptable thresholds if guardrails are not set per task class.
+
+**FrankMax mapping**: AI Cost Optimization Engine, Billing Leakage Detector, Token Budget Management.
+
+---
+
+### 6. Observability
+
+**Purpose**: Record cognition, not just output.
+
+Log prompts, log intermediate reasoning steps, track decision paths, capture validation results, expose traceability reports. Without observability, you cannot pass audit. And you cannot debug emergent failures. Mandatory in high-stakes systems.
+
+**Risk**: Observability data volumes grow faster than inference volumes. Storage and retrieval costs compound.
+
+**FrankMax mapping**: AI Audit & Verification Infrastructure, Obligation Tracking Dashboard, Telemetry spine (Kitchen layer).
+
+---
+
+### 7. Orchestration
+
+**Purpose**: Coordinate multi-step execution.
+
+Task decomposition, tool chaining, agent coordination, state persistence, dependency resolution. This turns a single response into a process. Without orchestration, you have answers. With orchestration, you have execution.
+
+**Risk**: Orchestration failures cascade. A single broken step can halt or corrupt an entire workflow.
+
+**FrankMax mapping**: DocuFlow Document Intelligence, Claims Processing Accelerator, multi-agent workflow engines.
+
+---
+
+### 8. Actuation
+
+**Purpose**: Connect cognition to real-world action.
+
+APIs, internal systems, workflow engines, external tool registries, transactional safeguards. This is the boundary where mistakes become incidents. Therefore, it must be gated by governance and validation.
+
+**Risk**: Ungated actuation creates liability exposure. Every action against a production system is a potential incident.
+
+**FrankMax mapping**: Agent Runtime & Identity Kernel, MCP Server integrations, tool registries, transactional execution layer.
+
+---
+
+### 9. Adaptation
+
+**Purpose**: Improve over time.
+
+Error feedback loops, human review signals, prompt tuning, task performance scoring, model benchmarking. If the system does not learn, it decays relative to competitors. Static AI infrastructure is obsolete AI infrastructure.
+
+**Risk**: Unconstrained adaptation can drift from organizational intent. Learning must be governed by the Governance superclass.
+
+**FrankMax mapping**: Failure Intelligence Feeds, Enterprise Memory Graph, performance benchmarking systems.
+
+---
+
+### 10. Experience
+
+**Purpose**: Control how humans engage the system.
+
+Voice interfaces, visual diff, accessibility enforcement, collaboration workflows, versioning and rollback UX. Often dismissed as "just UX." In reality, this determines adoption velocity. A system that is technically superior but unusable is worthless.
+
+**Risk**: Over-investing in experience before core infrastructure is solid creates surface without substance.
+
+**FrankMax mapping**: Operator dashboards, Collaboration UX, LevelUpMax certification interface.
+
+---
+
+## Superclass-to-Tier Coverage Matrix
+
+Each superclass has dominant tiers (where it is the primary control concern) and participatory tiers (where it contributes but is not dominant). The matrix below shows where each superclass has active layers.
+
+| Superclass | T01 | T02 | T03 | T04 | T05 | T06 | T07 | T08 | T09 | T10 | T11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Quality** | ++ | ++ | + | + | | | | | | | |
+| **Determinism** | ++ | ++ | ++ | + | | | | | | | |
+| **Abstraction** | + | ++ | ++ | ++ | + | | | | | | |
+| **Governance** | + | + | ++ | ++ | ++ | ++ | + | + | + | + | + |
+| **Economics** | + | + | + | ++ | ++ | ++ | ++ | + | + | ++ | |
+| **Observability** | + | ++ | ++ | ++ | ++ | ++ | ++ | ++ | + | | + |
+| **Orchestration** | + | + | + | | ++ | ++ | ++ | + | ++ | | |
+| **Actuation** | + | + | | | ++ | ++ | + | + | ++ | | |
+| **Adaptation** | + | + | + | + | + | ++ | ++ | ++ | ++ | ++ | + |
+| **Experience** | ++ | + | + | + | + | ++ | + | + | + | + | ++ |
+
+**Key**: `++` = dominant presence, `+` = participatory presence, blank = minimal/no presence.
+
+---
+
+## Superclass Interaction Rules
+
+1. **Governance must precede Actuation.** No layer may connect cognition to real-world action without governance gating.
+2. **Economics must parallel Quality.** Every quality improvement must have a cost-performance curve attached.
+3. **Observability must span all tiers.** If a tier cannot be audited, it cannot be deployed in regulated sectors.
+4. **Adaptation must be governed.** Unsupervised learning in enterprise systems creates drift, not improvement.
+5. **Determinism constrains Quality.** Raw quality optimization (more models, more passes) must be bounded by structural correctness requirements.
+
+---
+
+## Revenue Mapping
+
+| Superclass | Burger (Loss Leader) | Fries (Profit) | Kitchen (Moat) |
+|---|---|---|---|
+| Quality | Primary | | |
+| Determinism | Primary | | |
+| Abstraction | Primary | Secondary | |
+| Governance | | Primary | |
+| Economics | | Primary | Secondary |
+| Observability | | Primary | Primary |
+| Orchestration | | Primary | Secondary |
+| Actuation | | Secondary | |
+| Adaptation | | | Primary |
+| Experience | Secondary | Secondary | |
+
+Governance, Economics, Observability, and Orchestration are the Fries superclasses -- the profit engines with 60-95% margins. Adaptation and Observability are the Kitchen superclasses -- the compounding moat that makes the platform increasingly difficult to leave.
